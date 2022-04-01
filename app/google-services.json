@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622991153420",
+    "project_id": "iot-analysis-4dae1",
+    "storage_bucket": "iot-analysis-4dae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622991153420:android:64b4cbf402ebd53c485129",
+        "android_client_info": {
+          "package_name": "com.test.iotanalysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622991153420-r9agr3opi5dg0jgvun2dfc5pag0lbe1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJV1kzbuVXbRq2Y5DZOttcp4W6MAZcAvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622991153420-r9agr3opi5dg0jgvun2dfc5pag0lbe1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
