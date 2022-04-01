@@ -1,0 +1,35 @@
+#include <ESP8266WiFi.h>
+#include <FirebaseArduino.h>
+void setup() {
+  Serial.begin(115200); 
+  
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(14, OUTPUT);
+
+  WiFi.begin("Mayur","Mayur*123");
+  Serial.print("connecting");
+  while (WiFi.status()!=WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println();
+  Serial.print("connected: ");
+  Serial.println(WiFi.localIP());
+
+  Firebase.begin("iot-analysis-4dae1-default-rtdb.firebaseio.com", "cGyNvt0nCbZXu1u8mZPxIsn5AzFWMeB54ZxcdwSN");
+}
+void loop() {
+                      // wait for half a second
+
+ 
+      
+  String value1=Firebase.getString("led_1");
+
+  if (value1 == "true")
+    digitalWrite(14, HIGH); 
+  else
+    digitalWrite(14, LOW); 
+  
+}
